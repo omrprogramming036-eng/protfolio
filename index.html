@@ -175,12 +175,12 @@ function hire(){alert("Contact Omar via GitHub!")}
 
 /* EmailJS Contact Form Integration */
 (function(){
-    emailjs.init("YOUR_PUBLIC_KEY"); // ضع هنا Public Key من EmailJS
+    emailjs.init("5nmUORw2iEIqt7gS_"); // ضع هنا Public Key من EmailJS
 })();
 const form = document.getElementById("contactForm");
 form.addEventListener("submit", function(e){
     e.preventDefault();
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    emailjs.sendForm("service_pes24ix", "template_9pfl0jg", this)
     .then(function(){
         alert("Message sent successfully!");
         form.reset();
